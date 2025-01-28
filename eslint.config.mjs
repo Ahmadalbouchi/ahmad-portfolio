@@ -1,4 +1,3 @@
-/*
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
@@ -14,17 +13,3 @@ const compat = new FlatCompat({
 const eslintConfig = [...compat.extends("next/core-web-vitals")];
 
 export default eslintConfig;
-*/
-
-{
-    "extends": "next/core-web-vitals",
-    "rules": {
-      "react/no-unescaped-entities": "off",
-      "@typescript-eslint/quotes": "off",
-      "quotes": [0],
-      "avoidEscape": 0,
-      "allowTemplateLiterals": 0,
-      "no-useless-escape": 0
-    }
-  }
-  
