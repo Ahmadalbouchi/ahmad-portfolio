@@ -19,7 +19,7 @@ const Photo = () => {
   initial={{ opacity: 0 }}
   animate={{ 
     opacity: 1,
-    transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" } 
+    transition: { delay: 0.4, duration: 0.4, ease: "easeInOut" } 
   }}
   className="w-[250px] h-[250px] xl:w-[400px] xl:h-[400px] mix-blend-lighten absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" 
 > 
@@ -43,7 +43,7 @@ const Photo = () => {
   <motion.circle
     cx="253" 
     cy="253" 
-    r="250" 
+    r="214" 
     stroke="#00ff99" 
     strokeWidth="4"
     strokeLinecap="round"
