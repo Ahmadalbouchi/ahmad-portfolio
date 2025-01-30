@@ -24,8 +24,8 @@ const Home = () => {
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
           <span className="text-4xl text-gray-300 font-light flex items-center gap-2">
-          Software Developer
-          <FaLaptopCode className="text-3xl text-accent" />
+          Software Engineer <FaLaptopCode className="text-2xl text-accent" />
+          
           </span>
             <h1 className="h1 mb-6 font-light">
               Hello I'm <br />
