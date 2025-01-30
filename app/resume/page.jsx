@@ -9,6 +9,10 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaAndroid,
+  FaJava,
+  FaPython,
+  FaDatabase,
 } from "react-icons/fa";
 
 import {SiTailwindcss, SiNextdotjs} from "react-icons/si";
@@ -16,42 +20,47 @@ import {SiTailwindcss, SiNextdotjs} from "react-icons/si";
 //about data
 const about = {
     title: "About me",
-    description: "anything I will edit it later on edit from app/resume/page.jsx.",
+    description: "Results-driven and experienced developer (2+ years) based in Toronto, Ontario, Canada.  Passionate about innovative solutions, ready to relocate, and available for freelance projects. Bilingual in English and Arabic.",
     info:[
         {
-            fieldName : "Name",
+            fieldName : "Name:",
             fieldValue: " Ahmad AL Bouchi",
         },
         
         {
-            fieldName : "Phone",
+            fieldName : "Phone:",
             fieldValue: "+1(437)-665-3146",
         },
         
         {
-            fieldName : "Experience",
-            fieldValue: " 12+ Months",
+            fieldName : "Experience:",
+            fieldValue: " 2+ Years",
         },
         
         {
-            fieldName : "Address",
+            fieldName : "Address:",
             fieldValue: "Toronto ON, Canada",
         },
         
         {
-            fieldName : "Email",
-            fieldValue: "ahmad@gmail.com",
+            fieldName : "Email:",
+            fieldValue: "ahmadalboushi2004@gmail.com",
         },
         
         {
-            fieldName : "Freelance",
+            fieldName : "LinkedIn:",
+            fieldValue: "Ahmad AL Bouchi",
+        },
+
+        {
+            fieldName : "Freelance:",
             fieldValue: "Avaliable"
         },
-        
         {
-            fieldName : "Language",
+            fieldName : "Language:",
             fieldValue: "English, Arabic",
         },
+    ,
     ]
      
 };
@@ -114,8 +123,13 @@ const experience = {
 const education = {
     icon: '/assets/resume/cap.svg',
     title: 'My Education',
-    description:"edit again",
+    description:"Building a strong foundation in Software Engineering Technology through a college diploma, complemented by focused coursework in web development, databases, and programming languages.",
     items:[
+        {
+            instituation : "Centennial Collge",
+            degree:"Diploma Advanced in Software Engineering ",
+            duration:"2023-present",
+        },
         {
             instituation : "Online Course Platform",
             degree:"Full Stack Web Developer",
@@ -124,13 +138,29 @@ const education = {
         {
             instituation : "Codeademy",
             degree:"Front-end Track",
+            duration:"2024",
+        },
+        {
+            instituation : "Coursera",
+            degree:"Database Development ",
             duration:"2022",
         },
         {
-            instituation : "Centennial Collge",
-            degree:"Diploma Advanced in Software Engineering ",
-            duration:"2022-present",
+            instituation : "Udemy",
+            degree:"C# Complete course ",
+            duration:"2023",
         },
+        {
+            instituation : "Udemy",
+            degree:"Java Complete course ",
+            duration:"2023",
+        },
+        {
+            instituation : "Udemy",
+            degree:"Java Script(React.js,Next.js) ",
+            duration:"2024",
+        },
+        
        
       
     ]
@@ -144,7 +174,7 @@ const education = {
 const skills = {
 title: "My skills",
 description:
-"dohtji tpdjhpitj hitj thijr itjt hiojti jtrj htrjiojiortjh oijtrhoio toj",
+"Got an idea? I've got the skills. C#, Java, Python, JavaScript (React, Angular, Node.js), Android development, and database management are just a few of the ingredients I use to cook up innovative applications/Websites. Let's turn your imagination into something real.",
 
 skillList:[
     {
@@ -152,12 +182,29 @@ skillList:[
         name: "html 5",
       },
       {
+        icon: <FaAndroid />,
+        name: "Android Development",
+      },
+      
+      {
         icon: <FaCss3 />,
         name: "css 3",
       },
       {
         icon: <FaJs />,
         name: "javascript",
+      },
+      {
+        icon: <FaPython />,
+        name: "Python",
+      },
+      {
+        icon: <FaJava />,
+        name: "java",
+      },
+      {
+        icon: <FaDatabase />,
+        name: "Database Development",
       },
       {
         icon: <FaReact />,
@@ -207,15 +254,16 @@ const Resume = () => {
         >
         <div className="container mx-auto ">
             <Tabs
-            defaultValue="experience"
+            defaultValue="skills"
           className="flex flex-col xl:flex-row gap-[60px]"
             >
             <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
+            {/*<TabsTrigger value="experience">Experience</TabsTrigger>*/}
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
             </TabsList>
+            
 
             {/* content */}
             <div className="min-h-[70vh] w-full">
@@ -299,7 +347,9 @@ const Resume = () => {
                         <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                         {skills.skillList.map((skill, index) => {
                         return <li key={index}>
-                        <TooltipProvider delayDuration={100}>
+                        
+
+                          <TooltipProvider delayDuration={100}>
                         <Tooltip>
                             <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group" >
                             <div className="text-6xl group-hover:text-accent transition-all duration-300" > {skill.icon}</div> 
@@ -311,8 +361,6 @@ const Resume = () => {
 
                         </Tooltip>
                         </TooltipProvider>
-
-                        
 
                         </li>;
                         })}
@@ -328,7 +376,7 @@ const Resume = () => {
                     <h3 className="text-4xl font-bold " >{about.title}</h3>
                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0" >{about.description}
                     </p>
-                    <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0" > 
+                    <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[820px] mx-auto xl:mx-0" > 
                         {about.info.map((item, index) => {
                         return (
                             <li key={index} className=" flex items-center justify-center xl:justify-start gap-4  ">
