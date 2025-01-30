@@ -1,5 +1,5 @@
 "use client"; // Add this directive to mark the component as a Client Component
-
+import { FaLaptopCode, FaCogs  } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
@@ -23,16 +23,20 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-4xl text-accent">Software Developerr</span>
-            <h1 className="h1 mb-6">
+          <span className="text-4xl text-gray-300 font-light flex items-center gap-2">
+          Software Developer
+          <FaLaptopCode className="text-3xl text-accent" />
+          </span>
+            <h1 className="h1 mb-6 font-light">
               Hello I'm <br />
-              <span className="text-accent">Ahmad AL Bouchi</span>
+              <span className="text-accent font-light block">Ahmad</span>
+              <span className="text-accent font-light">AL Bouchi</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at designing and developing websites and full-stack
-              projects. I am highly skilled in creating user-friendly interfaces
-              and proficient in using a wide range of programming languages and
-              technologies.
+            <p className="max-w-[600px] mb-9 text-white/80 ">
+            I excel at designing and developing user-friendly websites and full-stack projects. My expertise
+             spans a variety of programming languages and technologies, enabling me to create seamless
+              and engaging user interfaces.  I am also proficient in database design and management, furthermore, excel in Connecting these databases to user-friendly
+             interfaces and making it easy for users to interact with and manage the data effectively.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
