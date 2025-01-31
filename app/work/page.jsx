@@ -44,14 +44,14 @@ const projects = [
     },
     {
         num: "03",
-        category: "frontend",
+        category: "Front-end",
         title: "Project 3",
         description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-        stack : [{name: "React.js"}, {name: "Css 3"}, {name: "Javascript"}],
-        image : '/assets/work/thumb3.png',
-        live: "",
-        github:"",
+        " Is it sunny? Rainy?  Find out in a flash! This city weather app makes checking the forecast a breeze.",
+        stack : [{name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
+        image : '/assets/work/weather1.png',
+        live: "https://weather2023ca.netlify.app/",
+        github:"https://github.com/Ahmadalbouchi/Weatherapp",
     },
     {
       num: "04",
