@@ -22,14 +22,14 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
     {
       num: "01",
-      category: "frontend",
+      category: "Full Stack",
       title: "Project 1",
       description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-      stack : [{name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
-      image : '/assets/work/thumb1.png',
-      live: "",
-      github:"",
+      "Find your next favorite read! Our book finder website lets you easily search our extensive library, create a personalized collection by adding books to your favorites or archive, and even download them.  Start your literary journey today - sign up and explore!",
+      stack : [{name: "React.js"}, {name: "Css 3"}, {name: "Html 5"}],
+      image : '/assets/work/bookfinder.png',
+      live: "http://bookfinderappv2.onrender.com",
+      github:"https://github.com/ro-bala/bookFinderAppV2",
     },
     {
         num: "02",
