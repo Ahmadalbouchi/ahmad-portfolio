@@ -55,13 +55,13 @@ const projects = [
     },
     {
       num: "04",
-      category: "frontend",
+      category: "Software Requirement Specification",
       title: "Project 4",
       description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-      stack : [{name: "React.js"}, {name: "Css 3"}, {name: "Javascript"}],
-      image : '/assets/work/thumb3.png',
-      live: "",
+      "Tired of phone tag and endless waiting rooms? Queue.Me is your pocket-sized portal to seamless scheduling.  This innovative app lets you effortlessly book appointments, manage your medical records, and even share feedback, all from the convenience of your phone.  Reclaim your time and say goodbye to appointment stress with Queue.Me – because your time is valuable.",
+      stack : [{name: "Figma"},],
+      image : '/assets/work/Queue.png',
+      live: "https://drive.google.com/file/d/1J_DRRxZTXkf5sPRUhXgM3h5Ew3AMD56g/view?usp=sharing",
       github:"",
   },
   ];
