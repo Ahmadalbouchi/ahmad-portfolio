@@ -22,25 +22,25 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
     {
       num: "01",
-      category: "Full Stack",
+      category: "Fullstack",
       title: "Project 1",
       description:
       "Find your next favorite read! Our book finder website lets you easily search our extensive library, create a personalized collection by adding books to your favorites or archive, and even download them.  Start your literary journey today - sign up and explore!",
-      stack : [{name: "React.js"}, {name: "Css 3"}, {name: "Html 5"}],
+      stack : [{name: "React.js"}, {name: "Css 3"}, {name: "Html 5"}, {name: "MongoDB"}],
       image : '/assets/work/bookfinder.png',
       live: "http://bookfinderappv2.onrender.com",
       github:"https://github.com/ro-bala/bookFinderAppV2",
     },
     {
         num: "02",
-        category: "fullstack",
+        category: "Front-end",
         title: "Project 2",
         description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-        stack : [{name: "Next.js"}, {name: "Tailwind.css"}, {name: "Node.js"}],
-        image : '/assets/work/thumb2.png',
-        live: "",
-        github:"",
+        "Think you're a trivia whiz? Play TriviaMaster now! Select a category, answer 5 quick questions, and find out your score. Challenge your friends and see who comes out on top!",
+        stack : [{name: "Javascript(react.js)"}, {name: "Css 3"}, {name: "Html 5"}],
+        image : '/assets/work/Triviamaster.png',
+        live: "https://triviamastergame.netlify.app/",
+        github:"https://github.com/Ahmadalbouchi/assignment2",
     },
     {
         num: "03",
