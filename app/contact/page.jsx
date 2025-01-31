@@ -61,8 +61,7 @@ const Contact = () => {
 
   <h3 className="text-4xl text-accent">Let's work together</h3>
   <p className="text-white/60">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nihil
-    sapiente pariatur id totam.
+  My expertise, your vision – let's bring it to life.  Simply fill out the form, choose the service that best fits your needs, and we'll be in touch shortly.
   </p>
 
   {/* Input fields */}
@@ -83,8 +82,11 @@ const Contact = () => {
         <SelectLabel>Select a service</SelectLabel>
         <SelectItem value="Web Development">Web Development</SelectItem>
         <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
-        <SelectItem value="Back-end Developer">Back-end Developer</SelectItem>
-        <SelectItem value="Database Developer">Database Developer</SelectItem>
+        <SelectItem value="Backend Development">Backend Development</SelectItem>
+        <SelectItem value="Software Development">Software Development</SelectItem>
+        <SelectItem value="Database Development">Database Development</SelectItem>
+        <SelectItem value="Android Development">Android Development</SelectItem>
+        <SelectItem value="Other">Other</SelectItem>
       </SelectGroup>
     </SelectContent>
   </Select>
