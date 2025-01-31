@@ -3,6 +3,7 @@ import { Button } from "./button";
 import Nav from "../Nav";
 import MobileNav from "../MobileNav";
 
+
 const Header = () => {
   return (
     <header className="py-8 xl:py-12 text-white">
@@ -12,6 +13,7 @@ const Header = () => {
           <h1 className="text-4xl font-semibold">
             AhmadBo<span className="text-accent">.</span>
           </h1>
+          
         </Link>
 
         {/* desktop nav & hire me button */}
