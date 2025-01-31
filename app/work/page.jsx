@@ -64,6 +64,50 @@ const projects = [
       live: "https://drive.google.com/file/d/1J_DRRxZTXkf5sPRUhXgM3h5Ew3AMD56g/view?usp=sharing",
       github:"",
   },
+  {
+    num: "05",
+    category: "Database & javafx",
+    title: "Project 5",
+    description:
+    "A sleek JavaFX interface acting as a portal to a tin, database (SQLite).  Users can effortlessly sculpt their data – conjuring new entries, peering at existing records, reshaping details, and banishing unwanted information – all through intuitive forms and dynamic displays.  This is the essence of CRUD operations brought to life.",
+    stack : [{name: "JavaFx"},{name:"SQL"}],
+    image : '/assets/work/db.png',
+    live: "",
+    github:"",
+},
+{
+  num: "06",
+  category: "Javafx UI ",
+  title: "Project 6",
+  description:
+  "Simple, sleek, and strong interface built with JavaFX, efficiently managing student data with clarity and ease.",
+  stack : [{name: "JavaFx"},{name:"Java"}],
+  image : '/assets/work/javafx.png',
+  live: "",
+  github:"",
+},
+{
+  num: "07",
+  category: "C# Windows Forms UI ",
+  title: "Project 7",
+  description:
+  "This C# Windows Form application manages pizza orders, capturing customer information, pizza selections, and order summaries within a straightforward interface.",
+  stack : [{name: "C#"},{name:"C# Windows Form"}],
+  image : '/assets/work/C.png',
+  live: "",
+  github:"",
+},
+{
+  num: "08",
+  category: "Database  ",
+  title: "Project 8",
+  description:
+  "In a strong and high-quality database, the mission becomes easier for law enforcement to effectively manage and analyze critical information related to officers, crimes, weapons, criminals, victims, cases, and contacts, ultimately contributing to enhanced public safety and efficient justice administration.",
+  stack : [{name: "SQL/PLSQL"},],
+  image : '/assets/work/DB1.jpg',
+  live: "",
+  github:"",
+},
   ];
 
   const Work = () => {
