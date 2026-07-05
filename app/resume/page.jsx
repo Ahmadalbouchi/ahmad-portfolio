@@ -128,7 +128,12 @@ const education = {
         {
             instituation : "Centennial Collge",
             degree:"Diploma Advanced in Software Engineering ",
-            duration:"2023-present",
+            duration:"2023-2026",
+        },
+        {
+            instituation : "York University",
+            degree:"Bachelor of Science in Computer Science",
+            duration:"2026-present",
         },
         {
             instituation : "Online Course Platform",
